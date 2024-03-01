@@ -1,0 +1,144 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 09:48:36  August 12, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		IgualCompleto_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY MUX_ULA
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:48:36  AUGUST 12, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE AsomaB.vwf
+set_global_assignment -name MISC_FILE "E:/Users/mms11/Downloads/ProjetoULA-20220822T163714Z-001/ProjetoULA/IgualCompleto.dpf"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AA22 -to selet[0]
+set_location_assignment PIN_Y24 -to selet[1]
+set_location_assignment PIN_Y23 -to selet[2]
+set_location_assignment PIN_AB25 -to numeroA[4]
+set_location_assignment PIN_AC25 -to numeroA[3]
+set_location_assignment PIN_AB26 -to numeroA[2]
+set_location_assignment PIN_AD26 -to numeroA[1]
+set_location_assignment PIN_AC26 -to numeroA[0]
+set_location_assignment PIN_AB27 -to numeroB[4]
+set_location_assignment PIN_AD27 -to numeroB[3]
+set_location_assignment PIN_AC27 -to numeroB[2]
+set_location_assignment PIN_AC28 -to numeroB[1]
+set_location_assignment PIN_AB28 -to numeroB[0]
+set_location_assignment PIN_F17 -to comparador
+set_location_assignment PIN_E21 -to 5bits[0]
+set_location_assignment PIN_E22 -to 5bits[1]
+set_location_assignment PIN_E25 -to 5bits[2]
+set_location_assignment PIN_E24 -to 5bits[3]
+set_location_assignment PIN_H21 -to 5bits[4]
+set_global_assignment -name BSF_FILE "display/Bloco displayDireita.bsf"
+set_global_assignment -name BSF_FILE "display/Bloco displayEsquerda.bsf"
+set_global_assignment -name BDF_FILE display/displayDireita.bdf
+set_global_assignment -name BDF_FILE display/displayEsquerda.bdf
+set_global_assignment -name BDF_FILE display/LASTone.bdf
+set_global_assignment -name BSF_FILE display/lpm_inv0.bsf
+set_global_assignment -name INCLUDE_FILE display/lpm_inv0.inc
+set_global_assignment -name QIP_FILE display/lpm_inv0.qip
+set_global_assignment -name AHDL_FILE display/lpm_inv0.tdf
+set_global_assignment -name BDF_FILE CelulaMaior.bdf
+set_global_assignment -name BDF_FILE MaiorCompleto.bdf
+set_global_assignment -name BDF_FILE IgualCompleto.bdf
+set_global_assignment -name BDF_FILE CelulaMenor.bdf
+set_global_assignment -name BDF_FILE MenorCompleto.bdf
+set_global_assignment -name BDF_FILE FuncaoAND.bdf
+set_global_assignment -name BDF_FILE FuncaoXOR.bdf
+set_global_assignment -name BDF_FILE InversorB.bdf
+set_global_assignment -name BDF_FILE ComplementoDeDois.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ComplementoDeDois.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MenorCompleto.vwf
+set_global_assignment -name BDF_FILE MUXComplementoDeDois.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MUXComplementoDeDois.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE IgualCompleto.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MaiorCompleto.vwf
+set_global_assignment -name BDF_FILE AmaiorB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE AmaiorB.vwf
+set_global_assignment -name BDF_FILE AmenorB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE AmenorB.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE FuncaoXOR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE FuncaoAND.vwf
+set_global_assignment -name BDF_FILE MUX_ULA.bdf
+set_global_assignment -name BDF_FILE CelulaSomador.bdf
+set_global_assignment -name BDF_FILE SomaCompleto.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE SomaCompleto.vwf
+set_global_assignment -name BDF_FILE AsomaB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE AsomaB.vwf
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_location_assignment PIN_G18 -to dir[0]
+set_location_assignment PIN_F22 -to dir[1]
+set_location_assignment PIN_E17 -to dir[2]
+set_location_assignment PIN_L26 -to dir[3]
+set_location_assignment PIN_L25 -to dir[4]
+set_location_assignment PIN_J22 -to dir[5]
+set_location_assignment PIN_H22 -to dir[6]
+set_location_assignment PIN_M24 -to esq[0]
+set_location_assignment PIN_Y22 -to esq[1]
+set_location_assignment PIN_W21 -to esq[2]
+set_location_assignment PIN_W22 -to esq[3]
+set_location_assignment PIN_W25 -to esq[4]
+set_location_assignment PIN_U23 -to esq[5]
+set_location_assignment PIN_U24 -to esq[6]
+set_global_assignment -name BDF_FILE displayentrada.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_AA17 -to dirEntrada[0]
+set_location_assignment PIN_AB16 -to dirEntrada[1]
+set_location_assignment PIN_AA16 -to dirEntrada[2]
+set_location_assignment PIN_AB17 -to dirEntrada[3]
+set_location_assignment PIN_AB15 -to dirEntrada[4]
+set_location_assignment PIN_AA15 -to dirEntrada[5]
+set_location_assignment PIN_AC17 -to dirEntrada[6]
+set_location_assignment PIN_AD17 -to esqEntrada[0]
+set_location_assignment PIN_AE17 -to esqEntrada[1]
+set_location_assignment PIN_AG17 -to esqEntrada[2]
+set_location_assignment PIN_AH17 -to esqEntrada[3]
+set_location_assignment PIN_AF17 -to esqEntrada[4]
+set_location_assignment PIN_AG18 -to esqEntrada[5]
+set_location_assignment PIN_AA14 -to esqEntrada[6]
